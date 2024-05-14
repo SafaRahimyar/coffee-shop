@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Serif+Display:ital@0;1&family=Pacifico&family=Poetsen+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #d1bb9ed8;
+}
+
+/* Section 1 */
+.bg-light {
+  background-color: transparent !important;
+}
+ .top-image nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.navbar-white {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  }
+.container a {
+  font-family: "Poetsen One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.container a span {
+  text-decoration: underline;
+  color: #FDE49E;
+}
+.nav-link:hover {
+ color: #FDE49E !important;
+
+}
+.carousel-item {
+  height: 90vh;
+  min-height: 300px;
+  opacity: 2;
+  filter: brightness(80%);
+}
+
+.carousel-caption {
+  bottom: 110px;
+}
+
+.carousel-caption h1 {
+  font-size: 50px;
+}
+
+.carousel-caption p {
+  color: rgba(213, 206, 206, 0.811);
+  font-weight: 20px;
+}
+
+/* Section 2 */
+.heading {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 2rem;
+  background-color: transparent !important;
+}
+.heading h1  {
+  margin-top: 50px;
+  font-family: "Fenix", serif;
+}
+.text-container p {
+  font-size: 2rem;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+}
+.heading h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+}
+
+.line img {
+  margin-left: 5px;
+  margin-bottom: 20px;
+}
+
+.card-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  gap: 5rem;
+}
+
+.ser-box {
+  background: #d1bb9ed8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1rem;
+  padding: 35px 20px;
+  border-radius: 2rem;
+  transition: transform 0.3s;
+}
+
+.ser-box:hover {
+  transform: scale(0.9);
+}
+
+.card-content p {
+  color: rgb(17, 17, 17);
+  font-size: 20px;
+}
+@media (max-width: 1200px) {
+  .text-container p {
+    font-size: 20px;
+  }
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  .card-content {
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 992px) {
+  .heading h2 {
+    font-size: 1.8rem;
+  }
+
+  .card-content {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .ser-box {
+    padding: 20px;
+  }
+
+  .card-content p {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-size: 40px;
+  }
+
+  .carousel-caption p {
+    font-size: 16px;
+  }
+
+  .heading h2 {
+    font-size: 1.6rem;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .container {
+    grid-template-columns: auto;
+  }
+
+  .servies {
+    width: 100%;
+  }
+}
+
+/* Section 3 */
+.gfg {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.text-container {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+}
+
+.btn {
+  font-size: 18px;
+  font-weight: bold;
+  background-color: #a792778d;
+  width: 170px;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.btn:hover {
+  transform: scale(0.9);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 10px;
+}
+
+/* Section 4 */
+.servies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 15px 15px 15px;
+  background-color: #d1bb9e;
+  width: 100%;
+  font-size: 14px;
+  margin-top: 20px;
+  animation: fade-out 1s;
+  transition: all 0.5s;
+}
+
+.servies:hover {
+  transform: translateY(-7px);
+}
+
+.servies button {
+  border: none;
+  background-color: #a79277c4;
+  color: white;
+  padding: 5px 5px;
+  margin-bottom: 10px;
+}
+
+.servies p {
+  text-align: center;
+}
+
+.services-title {
+  text-align: center;
+  margin: 25px 0;
+  margin-top: 20px;
+}
+
+/* Section 5 */
+.gallery-title {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.gallery-title h1 {
+  margin-top: 50px;
+  margin-left: 110px;
+}
+
+.gallery {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  column-gap: 5px;
+  row-gap: 5px;
+  transition: transform 0.3s;
+}
+
+.gallery:hover {
+  transition: transform 0.3s;
+}
+
+.gallries {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+/* Footer */
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #a7927786;
+  padding: 20px 0;
+  margin-top: 30px;
+}
